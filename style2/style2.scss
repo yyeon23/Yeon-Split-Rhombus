@@ -1,0 +1,128 @@
+
+
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+    
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 800;
+    color: #fff;
+}
+
+h1{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+}
+
+h2{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.background{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset/memo-holder-1.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between; //전체 화면 가로 중앙에 정렬
+    align-items: flex-start; //전체 화면 세로 중앙에 정렬
+    flex-direction: column;
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+
+}
+.left-contents{
+    width: 50vw;
+    padding-left: 18rem;
+    padding-top: 19.4rem;
+    color: #000;
+    h2{
+        font-size: 0.7rem;
+        line-height: 1.9;
+    }
+    
+    text-align: right;
+}
+.right-contents{
+    padding-left: 1rem;
+    padding-top: 20.4rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    br{
+        line-height: 0.2rem;
+    }
+    h2{
+        color:#000
+        
+    }
+    p{
+        //padding: 0.1rem
+        background-color: #000;
+        line-height: 0.7rem;
+    }
+}
+.line{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 100vw;
+    //width: 20px;
+    position: fixed; //스크롤되지 않고 그 자리에 고정된다는 의미
+    z-index: 100; //요소들 간에 Z축(쌓임)을 설정. 값이 클수록 위에 위치. position을 꼭 설정해야 함.
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation{
+    height: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    //position: fixed;
+    
+}
+.mouseXY{
+    height: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 48rem;
+    h1{
+        padding-right: 2rem;
+    }
+    //justify-content: center;
+    //align-items: center;
+}
+

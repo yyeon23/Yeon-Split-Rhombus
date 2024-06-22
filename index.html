@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>PLACE ARCHIVE</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+   <section class="background">
+       <span></span>
+   </section>
+   <section class="click-range">
+        
+   </section>
+   <section class="main">
+        <div class="image-holder-1" id="imageHolder">
+            <img class="image" id="click" src="/asset/image-holder-1-3.svg" alt="클릭 시 사람 그림자"/>
+        </div>
+        
+    
+        <section class="navigation">
+            <span>
+                <div class="placename">
+                    <h1>뚝섬 한강공원</h1>
+                </div>
+            </span>
+                <div class="mouseXY">
+                    <h1 id="mouseX"></h1>
+                    <!-- mouseX 값 넣기-->
+
+                    <h1 id="mouseY"></h1>
+                    <!-- mouseY 값 넣기-->
+                </div>
+                <div class="keywords" id="keywordContainer">
+                    <h1 class="keyword">따릉이</h1>
+                    <h1 class="keyword">물놀이장</h1>
+                    <h1 class="keyword">붐비지만</h1>
+                    <h1 class="keyword">일몰</h1>
+                </div>
+        </section>
+
+    </section>
+
+
+
+    <script>
+        const imageHolder = document.getElementById('imageHolder');
+        const keywords = document.querySelectorAll('.keyword');
+        const mouseX = document.getElementById('mouseX');
+        const mouseY = document.getElementById('mouseY');
+        // 이미지 요소를 가져옵니다.
+
+        imageHolder.addEventListener('mouseenter', function() {
+            keywords.forEach(keyword => {
+                keyword.style.display = 'inline';
+            });
+        });
+
+        imageHolder.addEventListener('mouseleave', function() {
+            keywords.forEach(keyword => {
+                keyword.style.display = 'none';
+            });
+        });
+
+        document.addEventListener('mousemove', function(event) {
+            mouseX.textContent = event.clientX.toFixed(3);
+            mouseY.textContent = event.clientY.toFixed(3);
+        });
+
+        // 이미지 클릭 시 다른 페이지로 이동
+        document.getElementById('click').addEventListener('click', function() {
+            window.location.href = '/memo-page.html'; // 이동할 페이지의 URL을 여기에 입력하세요.
+        });
+
+        window.onload = function() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
+</body>
+</html>

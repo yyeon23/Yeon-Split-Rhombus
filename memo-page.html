@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style2/style2.css">
+    <title>Document</title>
+
+    <style>
+        .contents h1 {
+            text-align: right;
+        }
+        .contents h2 {
+            text-align: right;
+        }
+        .right-contents p {
+            display: inline; /* <p> 태그를 인라인으로 변경 */
+            cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능하도록 설정 */
+        }
+    </style>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="background">
+        <span></span>
+    </section>
+    
+    <section class="main">
+        <div class="title">
+            
+        </div>
+        
+        <div class="contents">
+            <div class="left-contents">
+                <h1>2024/02/14</h1>
+                <h2>이파란, 김우림, 임새록, 한송</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>시끌벅적한 도시 속 조용한 자연의 품에 안겨있는 기분이<br> 들도록 하는 멋진 공원. 특히 자전거(따릉이) 타는 사람이<br> 많아서 활기찬 분위기가 좋다. 나무 그늘 아래 돗자리<br> 깔고 낮잠 한숨 자기 참 좋은 공간이다.<br> 바람을 맞으며 흔들리는 나무를 바라보는 시간이 소중했다.<br> 찾기 힘든, 지친 정신을 맑아지게 해 주는 곳. 오래 기억에 남지 않을까. 잊기<br> 전 계속해서 올 것. 햇살과 공기를 느낄 것.<br> 입구 우측 안쪽으로 들어가면 작은 계단이 하나 있는데, 그 아래 조그마한 물놀이장이<br> 있다. 내려가 앉아 있다보면 주변의 푸릇한 풍경이 눈에 들어오고 잦게 일렁이는 움직임을<br> 보기가 즐겁다. 자전거를 타야지만 만끽할 수 있는 자유로움이 그 어느 곳보다 아름다운 곳.<br> 뚝섬에서 보는 풍경이 정말 멋있고, 특히 해질녘의 한강은 그 무엇보다 로맨틱하다. 야외에서<br> 바베큐를 즐길 수 있기 때문에 친구들과 함께 좋은 추억을 만들고 싶다면 손에 꼽을 수 있는 곳.<br> 도시 속에 이런 공간이 숨어 있다는 것이 서울이 가진 매력이 아닐까 생각한다.<br> 한강공원은 늘 다양한 사람들로 붐비지만 뚝섬에 있는 공원들은 특히 다채로운 면들을 찾기에<br> 적합하다고 여겨진다. 사람이 많아서 활기가 넘친다고 느껴지는 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<br> 한편, 제각기 다른 목적을 가지고 모인 사람들이 움직이는&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br> 다양하고 재미난 모습들을 보다보면 시간 가는 줄 모르겠다.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<br> 하나 더 꼽자면, 일몰이 아름다워 참으로 멋져 보이는&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br> 곳이며, 조만간 출사를 위해 다시 이곳에&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br> 방문하게 되지 않을까 싶다.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
+            </div>
+            <div class="right-contents">
+                <img id="click" src="/asset/earth.svg" alt="지구본"/>
+                <h2>037.52930173983801</h2>
+                <h2>127.06927750540686</h2>
+                <br><br><br><br>
+                <p>따릉이</p><br><br><br><p>물놀이장</p><br><br><br><p>붐비지만</p><br><br><br><p>일몰</p>
+            
+            </div>
+
+        </div>
+
+         <section class="navigation">
+             <span>
+                 <div class="placename">
+                     <h1>뚝섬 한강공원</h1>
+                 </div>
+             </span>
+                 <div class="mouseXY">
+                     <h1 id="mouseX"></h1>
+                     <!-- mouseX 값 넣기-->
+                     <h1 id="mouseY"></h1>
+                     <!-- mouseY 값 넣기-->
+                 </div>
+                
+         </section>
+
+     </section>
+
+    <script>
+        // 이미지 클릭 시 다른 페이지로 이동
+        document.getElementById('click').addEventListener('click', function() {
+            window.location.href = '/home.html'; // 이동할 페이지의 URL을 여기에 입력하세요.
+        });
+
+        document.addEventListener('mousemove', function(event) {
+            var mouseX = event.clientX; // 마우스 X 좌표
+            var mouseY = event.clientY; // 마우스 Y 좌표
+
+            // 마우스 X 및 Y 값을 HTML 요소에 적용
+            document.getElementById('mouseX').textContent = mouseX.toFixed(3);
+            document.getElementById('mouseY').textContent = mouseY.toFixed(3);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const pTags = document.querySelectorAll('.right-contents p');
+            const h2Tags = document.querySelectorAll('.right-contents h2');
+
+            pTags.forEach(pTag => {
+                pTag.addEventListener('click', function() {
+                    const clickedText = this.textContent.trim();
+                    h2Tags.forEach(h2Tag => {
+                        const h2Text = h2Tag.textContent.trim();
+                        if (h2Text.includes(clickedText)) {
+                            h2Tag.style.fontWeight = 800;
+                        }
+                    });
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>

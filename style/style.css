@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+h2 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 200;
+  font-size: 1.34rem;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1792px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/asset/background-image-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.image-holder-1 {
+  position: relative;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  top: 31.5rem;
+  left: 34.5rem;
+  width: 296px;
+  height: 311px;
+}
+
+.navigation {
+  height: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+  width: 100vw;
+}
+
+.placename h1 {
+  width: 150px;
+}
+
+.mouseXY {
+  height: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 48rem;
+}
+.mouseXY h1 {
+  padding-left: 2rem;
+}
+
+.keywords {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10rem;
+}
+.keywords h1 {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  width: 80px;
+}
+
+.background2 {
+  background: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .mouseXY {
+    padding-left: 48rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mouseXY {
+    padding-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
